@@ -1,0 +1,44 @@
+@media (max-width: 959px) {
+  .sidebar {
+    font-size: 15px;
+    width: 16.4rem;
+  }
+
+  .page {
+    padding-left: 16.4rem;
+  }
+
+  .content:not(.custom) {
+    padding: 2rem;
+  }
+}
+@media (max-width: 719px) {
+  .sidebar {
+    top: 0;
+    padding-top: 3.6rem;
+    transform: translateX(-100%);
+    transition: 3.6rem 0.2s ease;
+  }
+
+  .page {
+    padding-left: 0;
+  }
+
+  .theme-container.sidebar-open .sidebar {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 419px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .content:not(.custom) {
+    padding: 1.5rem;
+  }
+
+  .content pre, .content pre[class*=language-] {
+    margin: 0.85rem -1.5rem;
+    border-radius: 0;
+  }
+}
